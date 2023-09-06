@@ -50,35 +50,96 @@ p {
   z-index: 1; /* Place the overlay above the background image */
 }
 
+.wrapper {
+  padding-left: 7vw;
+  padding-right: 7vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .box {
   position: absolute;
   height: auto;
-  width: 40vw;
+  width: auto;
   background-attachment: fixed;
   border-color: var(--white);
-  border-style: double;
+  border-style: outset;
   border-radius: 0px;
-  border-width: 1px;
-  top: 20vh;
-  margin-left: 45vw;
-  padding: 10px;
+  border-width: 3px;
+  top: 7vw;
+  padding: 20px;
   z-index: 2;
-  color: var(--white);
+  color: var(--darkGreen);
   font-family: var(--bodyFont);
+  box-shadow: 3px 3px 2px;
 }
 
 .name {
   font-weight: 100;
   font-size: 50px;
-  color: var(--white);
+  color: var(--darkGreen);
   margin: 0;
   padding: 0;
   background-attachment: fixed;
+  padding-bottom: 15px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+#animationContainer {
+  height: 100px;
+  width: 110px;
+  transform: rotate(90deg);
+  font-family: var(--bodyFont);
+  color: var(--white);
+  z-index: 2;
+  position: absolute;
+  top: 42%;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: var(--white);
+  width: 100%;
+  position: sticky;
+  margin-top: -70px;
+  bottom: 0;
+
+  transition: top 0.3s;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 50%;
+  font-family: var(--bodyFont);
+  text-decoration: none;
+}
+
+ul.navList li a {
+  text-decoration: none;
+  /* color: var(--white); */
+  color: var(--darkGreen);
+  font-weight: bold;
 }
 
 .text1 {
-  height: 1000px;
+  height: 100px;
   background-color: aqua;
+}
+
+.line {
+  z-index: 2;
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
 }
 
 @media only screen and (max-device-width: 1366px) {
