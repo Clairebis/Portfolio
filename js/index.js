@@ -1,45 +1,31 @@
-/*var animation = bodymovin.loadAnimation({
-  container: document.getElementById("animationContainer"),
-  renderer: "svg",
-  loop: true,
-  autoplay: true,
-  path: "/lottie.json",
-});*/
-
-/*// Get a reference to the container
-const container = document.getElementById("animationContainer");
-
-// Specify the path to your Lottie animation JSON file
-const animationPath = "/lottie.json";
-
-// Configure Lottie options
-const animationOptions = {
-  container: container,
-  renderer: "svg", // Use 'svg' for better compatibility
-  loop: true, // Set to true for a looping animation
-  autoplay: true, // Set to true to start the animation automatically
-  path: animationPath,
-};
-
-// Create the Lottie animation
-const animation = lottie.loadAnimation(animationOptions);
-*/
 // Get the navigation bar element
 const navigationBar = document.getElementById("navigation");
+const navLinks = document.querySelectorAll("ul.navList li a");
 
 // Function to update the navigation bar position
 function updateNavigationBarPosition() {
-  const scrollThreshold = 768;
+  const scrollThreshold = 600;
 
   if (window.scrollY > scrollThreshold) {
     navigationBar.style.top = "0";
     navigationBar.style.position = "fixed";
     navigationBar.style.marginTop = "0";
+    navigationBar.style.backgroundColor = "#719DA0";
+    // Loop through each link to change its color
+    navLinks.forEach(function (link) {
+      link.style.color = "white";
+      link.style.fontWeight = "300";
+    });
   } else {
     navigationBar.style.bottom = "0";
     navigationBar.style.position = "sticky";
     navigationBar.style.marginTop = "-70px";
-    /* Back to the bottom position */
+    navigationBar.style.backgroundColor = "transparent";
+    // Loop through each link to change its color
+    navLinks.forEach(function (link) {
+      link.style.color = "white";
+      link.style.fontWeight = "400";
+    });
   }
 }
 

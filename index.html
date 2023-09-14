@@ -5,64 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claire's portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
+    <section class="container">
       <div class="parallax">
         <div class="overlay"></div>
         <div class="wrapper">
           <div class="box">
-            <h1 class="name">Claire Bisgaard</h1>
-            <h2 class="title">Frontend Developer and UX Designer</h2>
-            <p>
+            <h1 class="heroName">CLAIRE BISGAARD</h1>
+            <h2 class="heroTitle">Frontend Developer and UX Designer</h2>
+            <p class="heroDescription">
               A Scottish frontend web developer with a passion for understanding
               users.
             </p>
           </div>
-          <div id="animationContainer">
-            <p>SCROLL > > ></p>
-          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="text1">
+    <section class="text1">
       <div id="navigation">
         <ul class="navList">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
 
-      <p>This is here to show the effect</p>
-      <svg
-        id="Layer_2"
-        data-name="Layer 2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 500.94 900.29"
-      >
-        <defs>
-          <style>
-            .cls-1 {
-              fill: none;
-              stroke: #000;
-              stroke-miterlimit: 10;
-            }
-          </style>
-        </defs>
-        <g id="Layer_1-2" data-name="Layer 1">
-          <path
-            class="cls-1"
-            d="m.44,67.88C32.91,7.64,90.8-10.73,119.44,6.88c21.88,13.45,31.32,50.76,23,78-7.49,24.52-30.03,43.07-35,47-15.98,12.64-31.14,17.23-38,35-2.9,7.51-2.98,13.93-3,18-.08,21.93,12.11,35.17,27,59,11.91,19.04,18.47,33.55,30,59,13.08,28.88,19.62,43.32,21,56,.23,2.14,5.03,53.09-28,87-20.23,20.77-37.09,17.11-55,43-6.36,9.19-14.89,21.52-14,37,1.14,19.86,16.62,24.87,43,58,20.65,25.94,31.01,47.81,37,65,10.72,30.8,6.78,44.85,5,50-5.28,15.27-16.56,24.54-23,29"
-            stroke-width="1"
-          />
-        </g>
-      </svg>
-    </div>
+      <div class="me content">
+        <div class="descriptionSection">
+          <div class="leftSection"><img src="/Me.jpg" class="meIce" /><img src="/Me.jpg" class="meIce" /></div>
+          <div class="rightSection">
+            <h1 class="whoAmI">WHO AM I?</h1>
+            <p class="para">
+              I’m a Scottish Multimedia Designer based in Hørning, Denmark.
+              Having previously studied law, worked in support and compliance
+              roles and looked after children in a daycare, I have a varied
+              background filled with experiences that help me to understand
+              various aspects of a company and collaborate with different teams.
+            </p>
+            <p class="para">
+              I’m married to a Dane and the mum of two young kids, so life is
+              full of exploring and adventuring with them!
+            </p>
+            <p class="para">Click below to learn more.</p>
+            <a href="/about.html" class="btn"><span class="centredContent">MORE ABOUT ME</span><img class="centredContent" src="arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg"></a>
+          </div>
+        </div>
+      </div>
+   
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+    <div class="featured">
+      <h1 class="whoAmI descriptionSection centre">FEATURED PROJECTS</h1>
+      <div class="featuredContent">
+      <section class="cards">
+        <div class="card">
+          <div class="cardImageContainer">
+            <img class="cardImage" src="exploreHørning.png">
+          </div>
+            <h2>Title</h2>
+            <p>Text</p>
+            <a href="#">Read more</a>
+          </div>
+            <div class="card">
+          <div class="cardImageContainer">
+            <img class="cardImage" src="smukfest.png">
+          </div>
+            <h2>Title</h2>
+            <p>Text</p>
+            <a href="#">Read more</a>
+          </div>
+            <div class="card">
+          <div class="cardImageContainer">
+            <img class="cardImage" src="agfBasketball.png">
+          </div>
+            <h2>Title</h2>
+            <p>Text</p>
+            <a href="#">Read more</a>
+          </div>
+      </section>
+      <a href="/projects.html" class="btnMiddle"><span class="centredContent">SEE ALL PROJECTS</span><img class="centredContent" src="arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg"></a>
+      </div>
+        </div>
+
+        <div class="featured">
+          <h1 class="whoAmI descriptionSection centre">GET IN TOUCH</h1>
+        </div>
+
+        <div class="footer descriptionSection">
+          <div class="footerMain"><div>
+            <h2>FURTHER LINKS</h2>
+            <ul class="footerLinks">
+              <li><a href="#">LinkedIn</a></li><br>
+              <li><a href="#">Github</a></li><br>
+              <li><a href="#">Download a copy of my CV</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>CONTACT</h2>
+            <ul>
+              <li>claire.bisgaard@gmail.com</li><br>
+              <li>+45 42435843</li>
+            </ul>
+          </div>
+          </div>
+          <div>
+            <p>&copy; 2023 Claire Bisgaard</p>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+    
+    
+    
+    
+    <!--<svg
+      id="Layer_2"
+      data-name="Layer 2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 500.94 900.29"
+    >
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #000;
+            stroke-miterlimit: 10;
+          }
+        </style>
+      </defs>
+      <g id="Layer_1-2" data-name="Layer 1">
+        <path
+          class="cls-1"
+          d="m.44,67.88C32.91,7.64,90.8-10.73,119.44,6.88c21.88,13.45,31.32,50.76,23,78-7.49,24.52-30.03,43.07-35,47-15.98,12.64-31.14,17.23-38,35-2.9,7.51-2.98,13.93-3,18-.08,21.93,12.11,35.17,27,59,11.91,19.04,18.47,33.55,30,59,13.08,28.88,19.62,43.32,21,56,.23,2.14,5.03,53.09-28,87-20.23,20.77-37.09,17.11-55,43-6.36,9.19-14.89,21.52-14,37,1.14,19.86,16.62,24.87,43,58,20.65,25.94,31.01,47.81,37,65,10.72,30.8,6.78,44.85,5,50-5.28,15.27-16.56,24.54-23,29"
+          stroke-width="1"
+        />
+      </g>
+    </svg>-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
