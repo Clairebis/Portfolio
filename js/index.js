@@ -11,6 +11,7 @@ function updateNavigationBarPosition() {
     navigationBar.style.position = "fixed";
     navigationBar.style.marginTop = "0";
     navigationBar.style.backgroundColor = "#719DA0";
+    navigationBar.style.transition = "0.3s ease-in-out";
     // Loop through each link to change its color
     navLinks.forEach(function (link) {
       link.style.color = "white";
@@ -21,6 +22,7 @@ function updateNavigationBarPosition() {
     navigationBar.style.position = "sticky";
     navigationBar.style.marginTop = "-70px";
     navigationBar.style.backgroundColor = "transparent";
+    navigationBar.style.transition = "0.3s ease-in-out";
     // Loop through each link to change its color
     navLinks.forEach(function (link) {
       link.style.color = "white";

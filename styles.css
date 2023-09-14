@@ -132,6 +132,11 @@ ul.navList li a {
   color: var(--white);
 }
 
+ul.navList li a:hover {
+  color: var(--black);
+  transition: 0.3s ease-in-out;
+}
+
 .text1 {
   height: 100px;
 }
@@ -155,6 +160,17 @@ ul.navList li a {
 
 .meIce {
   height: 400px;
+  margin-left: -50px;
+  margin-top: 50px;
+}
+.meIce2 {
+  height: 200px;
+}
+
+.meSmallPhotos {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .whoAmI {
@@ -183,6 +199,23 @@ ul.navList li a {
   align-items: center;
 }
 
+.btn:hover {
+  background-color: var(--navBar);
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+
+.btn:active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: medium;
+}
+
 .centredContent {
   display: inline-block;
   margin: 0 5px;
@@ -202,10 +235,15 @@ ul.navList li a {
   margin: auto;
 }
 
-.btn a {
-  text-decoration: none;
-  color: var(--black);
-  font-size: medium;
+.btnMiddle:hover {
+  background-color: var(--navBar);
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+
+.btnMiddle:active {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .btnMiddle a {
@@ -216,7 +254,7 @@ ul.navList li a {
 
 .rightSection {
   width: 60%;
-  padding-left: 5vw;
+  padding-left: 7vw;
 }
 
 .leftSection {
@@ -248,7 +286,7 @@ ul.navList li a {
   background-color: var(--white);
   width: 360px;
   height: auto;
-  /*border-radius: 10px;*/
+  box-shadow: 1px 1px 5px var(--navBar);
 }
 
 .cardImageContainer {
@@ -258,13 +296,11 @@ ul.navList li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  .cardImage {
-    height: 250px;
-    width: 100%;
-  }
-
-  /*border-radius: 10px 10px 0 0;*/
+.cardImage {
+  height: 250px;
+  width: 100%;
 }
 
 .card p {
@@ -276,8 +312,8 @@ ul.navList li a {
 }
 
 .card a {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
   padding: 15px 20px;
   display: block;
   text-align: center;
@@ -288,6 +324,74 @@ ul.navList li a {
   cursor: pointer;
   transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
+}
+
+.getInTouch {
+  display: flex;
+  margin-top: 15vh;
+}
+
+.getLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--heroFont);
+  font-weight: 100;
+  background-color: var(--navBar);
+  color: var(--white);
+}
+
+.getHeading {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-size: xx-large;
+  font-weight: 100;
+  margin-top: 3vh;
+}
+
+.getPara {
+  font-weight: 300;
+}
+
+.getRight {
+  width: 50%;
+  height: 300px;
+}
+
+.getImage {
+  height: 100%;
+  width: 100%;
+}
+
+.getBtn {
+  display: flex;
+  width: 50%;
+  font-family: var(--heroFont);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--white);
+  justify-content: center;
+  color: var(--black);
+  align-items: center;
+  margin: auto;
+}
+
+.getBtn:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+
+.getBtn:active {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.getBtn a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: medium;
 }
 
 .footer {
@@ -360,6 +464,11 @@ ul.footerLinks li a {
 
 ul.subNavList li a {
   color: var(--white);
+}
+
+ul.subNavList li a:hover {
+  color: var(--black);
+  transition: 0.3s ease-in-out;
 }
 
 .heading {
@@ -486,12 +595,20 @@ ul.subNavList li a {
   margin-bottom: 2vh;
 }
 
-.gallery {
+.galleryContainer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
 }
 
 .galleryPic {
-  width: 300px;
+  width: 295px;
+}
+
+.galleryPic:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Contact */

@@ -42,13 +42,13 @@
 
       <div class="me content">
         <div class="descriptionSection">
-          <div class="leftSection"><img src="/Me.jpg" class="meIce" /><img src="/Me.jpg" class="meIce" /></div>
+          <div class="leftSection" ><div class="meSmallPhotos" data-aos="fade-right"><img src="/Me2.JPG" class="meIce2" /><img src="/Me2.JPG" class="meIce2" /></div><img src="/Me.jpg" class="meIce" data-aos="fade-left" /></div>
           <div class="rightSection">
             <h1 class="whoAmI">WHO AM I?</h1>
             <p class="para">
               I’m a Scottish Multimedia Designer based in Hørning, Denmark.
-              Having previously studied law, worked in support and compliance
-              roles and looked after children in a daycare, I have a varied
+              Having previously studied law, worked in support & compliance
+              roles, and looked after children in a daycare, I have a varied
               background filled with experiences that help me to understand
               various aspects of a company and collaborate with different teams.
             </p>
@@ -66,16 +66,16 @@
     <div class="featured">
       <h1 class="whoAmI descriptionSection centre">FEATURED PROJECTS</h1>
       <div class="featuredContent">
-      <section class="cards">
-        <div class="card">
-          <div class="cardImageContainer">
+      <section class="cards" data-aos="fade-left">
+        <div class="card" >
+          <div class="cardImageContainer" >
             <img class="cardImage" src="exploreHørning.png">
           </div>
             <h2>Title</h2>
             <p>Text</p>
             <a href="#">Read more</a>
           </div>
-            <div class="card">
+            <div class="card" >
           <div class="cardImageContainer">
             <img class="cardImage" src="smukfest.png">
           </div>
@@ -83,7 +83,7 @@
             <p>Text</p>
             <a href="#">Read more</a>
           </div>
-            <div class="card">
+            <div class="card" >
           <div class="cardImageContainer">
             <img class="cardImage" src="agfBasketball.png">
           </div>
@@ -96,12 +96,23 @@
       </div>
         </div>
 
-        <div class="featured">
-          <h1 class="whoAmI descriptionSection centre">GET IN TOUCH</h1>
-        </div>
+        
 
-        <div class="footer descriptionSection">
-          <div class="footerMain"><div>
+        <div class="getInTouch featured" data-aos="fade-right">
+          <div class="getLeft">
+            <h2 class="getHeading">CONTACT ME</h2>
+            <p class="getPara">If you like what you see, I'd love to hear from you.</p>
+            <a href="/projects.html" class="getBtn"><span class="centredContent">GET IN TOUCH</span><img class="centredContent" src="arrow_right_alt_FILL0_wght400_GRAD0_opsz24.svg"></a>
+
+          </div>
+          <div class="getRight">
+            <img src="cover4.png" class="getImage">
+          </div>
+        </div>
+        
+
+        <div class="footer descriptionSection" >
+          <div class="footerMain" ><div>
             <h2>FURTHER LINKS</h2>
             <ul class="footerLinks">
               <li><a href="#">LinkedIn</a></li><br>
@@ -118,7 +129,7 @@
           </div>
           </div>
           <div>
-            <p>&copy; 2023 Claire Bisgaard</p>
+            <p class="copyright">&copy; 2023 Claire Bisgaard</p>
           </div>
         </div>
       </section>
@@ -153,6 +164,13 @@
     </svg>-->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init({
+    offset: 100, // Offset (in pixels) from the top of the page to trigger animations
+    duration: 2000, // Duration of the animation (in milliseconds)
+    easing: 'ease-in-out', // Easing options (e.g., 'ease', 'linear', 'ease-in-out')
+  });
+</script>
     <script src="js/index.js"></script>
   </body>
 </html>
