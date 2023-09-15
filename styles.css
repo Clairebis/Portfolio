@@ -137,6 +137,18 @@ ul.navList li a:hover {
   transition: 0.3s ease-in-out;
 }
 
+ul.navList li a.highlighted {
+  font-weight: bold;
+}
+
+ul.subNavList li a.highlighted {
+  font-weight: bold;
+}
+
+p.reachOut a {
+  color: var(--navBar);
+}
+
 .text1 {
   height: 100px;
 }
@@ -278,46 +290,110 @@ ul.navList li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   font-family: var(--heroFont);
-  gap: 53px;
+  gap: 30px;
   margin-bottom: 50px;
 }
 
 .card {
   background-color: var(--white);
-  width: 360px;
+  width: 300px;
   height: auto;
   box-shadow: 1px 1px 5px var(--navBar);
+  font-family: var(--heroFont);
+  color: var(--black);
+  padding: 40px;
 }
 
 .cardImageContainer {
-  background-color: blueviolet;
-  height: 250px;
-  margin-bottom: 15px;
+  background-color: var(--white);
+  height: auto;
+
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.cardImageContainerSmuk {
+  background-color: var(--white);
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .cardImage {
-  height: 250px;
+  height: auto;
   width: 100%;
 }
 
-.card p {
-  padding: 10px;
+.cardImageLap {
+  height: 180px;
+  width: auto;
+  margin-top: 20px;
 }
 
-.card h2 {
-  padding: 10px;
+.cardImageMob {
+  height: 130px;
+  width: auto;
+  margin-left: -50px;
+}
+
+.cardImageMonitor {
+  height: 200px;
+  width: auto;
+}
+
+.projectCardLowerSection {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 30px;
+}
+
+.projectCardTitle {
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.projectCardSub {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.projectCardDescription {
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.projectCardBottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.projectCardBottomText {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
 }
 
 .card a {
-  background-color: var(--black);
+  background-color: var(--navBar);
   color: var(--white);
-  padding: 15px 20px;
-  display: block;
-  text-align: center;
-  margin: 20px 50px;
+  font-size: 14px;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 30px;
 }
 
 .card:hover {
@@ -425,7 +501,7 @@ ul.footerLinks li a {
 
 .footerMain {
   display: flex;
-  width: 35%;
+  width: 48%;
   justify-content: space-between;
 }
 
@@ -622,36 +698,75 @@ ul.subNavList li a:hover {
 }
 
 .contactCard {
-  border-style: solid;
-  border-width: 1px;
-  border-color: --black;
+  background-color: var(--white);
+  box-shadow: 1px 1px 5px var(--navBar);
   width: 160px;
   height: auto;
   font-family: var(--heroFont);
   padding: 40px 50px;
+  position: relative;
+}
+
+.contactHeader {
+  display: flex;
+}
+
+.contactHeading {
+  padding-bottom: 3vh;
+  font-size: xx-large;
+  font-weight: 100;
+  color: var(--black);
+  margin-left: 40px;
+}
+
+.contactBox {
+  width: 5px;
+  height: 45px;
+  background-color: var(--navBar);
+  margin-left: -50px;
 }
 
 .contactCard a {
-  background-color: var(--darkGreen);
-  color: #ffffff;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+}
+
+.contactCard a:hover {
+  background-color: var(--navBar);
+  color: var(--white);
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.contactCard a:active {
+  background-color: var(--black);
+  color: var(--white);
   padding: 15px 20px;
   display: block;
   text-align: center;
 }
 
 .contactCard:hover {
-  background-color: greenyellow;
   cursor: pointer;
   transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
 }
 
-.contactHeading {
-  margin-bottom: 40px;
+.contactDescription {
+  margin-bottom: 7vh;
 }
 
-.contactDescription {
-  margin-bottom: 60px;
+.contactButton {
+  position: absolute;
+  bottom: 3vh;
+  width: 50%;
+  left: 50%; /* You can adjust the horizontal alignment as needed */
+  transform: translateX(-50%); /* Center the button horizontally */
 }
 
 /* Media queries / responsiveness */

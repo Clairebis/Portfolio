@@ -33,3 +33,44 @@ function updateNavigationBarPosition() {
 
 // Listen for scroll events and update the position accordingly
 window.addEventListener("scroll", updateNavigationBarPosition);
+
+// *******NAVIGATION BAR - HIGHLIGHT ACTIVE PAGE *************
+
+/* Doesn't work....
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all the links in the document
+  const links = document.querySelectorAll("ul.navList li a, ul.subNav li a");
+
+  // Function to highlight the active page
+  function highlightCurrentPage() {
+    const currentPath = window.location.pathname;
+
+    links.forEach((link) => {
+      const linkPath = link.getAttribute("href");
+
+      // Check if the link's href matches the current path
+      if (linkPath === currentPath) {
+        link.classList.add("highlighted");
+      } else {
+        link.classList.remove("highlighted");
+      }
+    });
+  }
+
+  // Call the function to initially highlight the current page
+  highlightCurrentPage();
+
+  // Loop through each link and add a click event listener
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      // Remove the highlighted class from all links
+      links.forEach((l) => {
+        l.classList.remove("highlighted");
+      });
+
+      // Add the highlighted class to the clicked link
+      link.classList.add("highlighted");
+    });
+  });
+});*/
