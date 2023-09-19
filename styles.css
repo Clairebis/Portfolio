@@ -39,7 +39,7 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("/cover_3.png");
+  background-image: url("/assets/cover_3.png");
   /* set height */
   height: 80vh;
   /* Create the parallax scrolling effect */
@@ -168,15 +168,25 @@ p.reachOut a {
   display: flex;
   font-family: var(--heroFont);
   margin-top: 15vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .meIce {
   height: 400px;
   margin-left: -50px;
   margin-top: 50px;
+  z-index: 0;
 }
 .meIce2 {
   height: 200px;
+  z-index: 0;
+}
+
+.meIce3 {
+  height: 200px;
+  z-index: 1;
+  position: relative;
 }
 
 .meSmallPhotos {
@@ -322,6 +332,14 @@ p.reachOut a {
   align-items: flex-start;
 }
 
+.cardImageContainer24 {
+  background-color: var(--white);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .cardImage {
   height: auto;
   width: 100%;
@@ -330,7 +348,13 @@ p.reachOut a {
 .cardImageLap {
   height: 180px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 0px;
+}
+
+.cardImageLap24 {
+  height: 180px;
+  width: 210px;
+  margin-top: 0px;
 }
 
 .cardImageMob {
@@ -339,9 +363,16 @@ p.reachOut a {
   margin-left: -50px;
 }
 
-.cardImageMonitor {
-  height: 200px;
+.cardImageMob24 {
+  height: 130px;
   width: auto;
+  margin-left: 0;
+}
+
+.cardImageMonitor {
+  height: 170px;
+  width: auto;
+  margin-bottom: 10px;
 }
 
 .projectCardLowerSection {
@@ -380,8 +411,20 @@ p.reachOut a {
   font-size: 12px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   width: 70%;
+}
+
+.tools,
+.clock {
+  display: flex;
+  gap: 5px;
+}
+
+.clockIcon {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
 }
 
 .card a {
@@ -550,7 +593,7 @@ ul.subNavList li a:hover {
 .heading {
   display: flex;
   font-family: var(--heroFont);
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 
 .subDescription {
@@ -563,13 +606,15 @@ ul.subNavList li a:hover {
 .aboutDescription {
   display: flex;
   font-family: var(--heroFont);
-  margin-top: 5vh;
+
   color: var(--black);
+  align-content: flex-start;
 }
 
 .familyPic {
   height: auto;
   width: 100%;
+  padding-top: 10vh;
 }
 
 .cAndM {
@@ -593,6 +638,10 @@ ul.subNavList li a:hover {
 
 .aboutLeftSection {
   width: 60%;
+}
+
+.familyMargin {
+  margin-left: 10vh;
 }
 
 .team {
@@ -639,6 +688,8 @@ ul.subNavList li a:hover {
 
 .hobbies {
   list-style-type: circle;
+  padding-top: 10px;
+  padding-bottom: 1px;
 }
 
 .hob1 {
@@ -767,6 +818,58 @@ ul.subNavList li a:hover {
   width: 50%;
   left: 50%; /* You can adjust the horizontal alignment as needed */
   transform: translateX(-50%); /* Center the button horizontally */
+}
+
+/* PROJECT PAGES */
+
+.breadcrumbs {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-family: var(--heroFont);
+  color: var(--black);
+  margin-top: 5vh;
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumbs a {
+  color: var(--black);
+}
+
+.projectBreadcrumbs {
+  font-weight: 300;
+}
+
+.locationBreadcrumbs {
+  font-weight: 400;
+}
+
+.projectWrapper {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  display: flex;
+  font-family: var(--heroFont);
+  color: var(--black);
+}
+
+.projectTopLeft {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  background-color: #f8fafa;
+  padding: 30px;
+}
+
+.projectTopRight {
+  width: 60%;
+  margin-left: 5vw;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Media queries / responsiveness */
