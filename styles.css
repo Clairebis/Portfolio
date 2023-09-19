@@ -180,6 +180,7 @@ p.reachOut a {
 }
 .meIce2 {
   height: 200px;
+
   z-index: 0;
 }
 
@@ -858,8 +859,17 @@ ul.subNavList li a:hover {
   width: 40%;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #f8fafa;
   padding: 30px;
+  border-radius: 10px;
+}
+
+.cardImageMobHid {
+  height: 130px;
+  width: auto;
+  margin-left: 0;
+  margin-top: -50px;
 }
 
 .projectTopRight {
@@ -870,6 +880,116 @@ ul.subNavList li a:hover {
 .projectInfo {
   display: flex;
   flex-direction: column;
+}
+
+.bringProject {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 10vh;
+  margin-top: 1vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  color: var(--black);
+}
+
+.process {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5vh;
+  font-family: var(--heroFont);
+  color: var(--black);
+  font-weight: 400;
+  margin-top: 5vh;
+  display: flex;
+}
+
+#anchorProcess {
+  font-weight: 300;
+}
+
+#anchorCode {
+  font-weight: 300;
+}
+
+.processLeft {
+  width: 50%;
+  margin-bottom: 5vh;
+}
+
+.codeRight {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: auto;
+  margin-bottom: 10vh;
+}
+
+.processRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.processImg1 {
+  width: 300px;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.processImg2 {
+  width: 180px;
+  margin: auto;
+}
+
+.processImg3 {
+  width: 300px;
+  margin: auto;
+}
+
+.processImg4 {
+  width: 180px;
+}
+
+.processImg5 {
+  width: 500px;
+}
+
+.processsImages {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.bullets {
+  list-style-type: disc;
+  margin-left: 3vw;
+}
+
+.proCo {
+  margin-bottom: 3vh;
+}
+
+.codeImages {
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+
+  margin: auto;
+}
+
+.external {
+  color: var(--navBar);
+}
+
+.dark {
+  background-color: #f8fafa;
+}
+
+.btnProjects {
+  margin-bottom: 10vh;
 }
 
 /* Media queries / responsiveness */

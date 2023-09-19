@@ -31,7 +31,10 @@ function updateNavigationBarPosition() {
   }
 }
 
-// MY PROJECTS text appearing one letter at a time
+// Listen for scroll events and update the position accordingly
+window.addEventListener("scroll", updateNavigationBarPosition);
+
+/* MY PROJECTS text appearing one letter at a time
 
 const myText = "MY PROJECTS";
 const myArray = myText.split("");
@@ -47,10 +50,28 @@ function frameLooper() {
   loopTimer = setTimeout("frameLooper()", 200);
 }
 
-frameLooper();
+frameLooper();*/
 
-// Listen for scroll events and update the position accordingly
-window.addEventListener("scroll", updateNavigationBarPosition);
+// function for all textAnimation
+
+function textAnimation(targetElementId, text, animationSpeed = 200) {
+  const targetElement = document.getElementById(targetElementId);
+  const textArray = text.split("");
+  let timerId = null;
+
+  function animateText() {
+    if (textArray.length > 0) {
+      targetElement.innerHTML += textArray.shift();
+    } else {
+      clearTimeout(timerId);
+    }
+    timerId = setTimeout(animateText, animationSpeed);
+  }
+
+  animateText();
+}
+
+textAnimation("myProjects", "MY PROJECTS");
 
 // *******NAVIGATION BAR - HIGHLIGHT ACTIVE PAGE *************
 
