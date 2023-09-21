@@ -1,6 +1,9 @@
+//***********NAV BAR SCROLLING**********
+
 // Get the navigation bar element
 const navigationBar = document.getElementById("navigation");
 const navLinks = document.querySelectorAll("ul.navList li a");
+const highlighted = document.getElementById("high");
 
 // Function to update the navigation bar position
 function updateNavigationBarPosition() {
@@ -16,6 +19,7 @@ function updateNavigationBarPosition() {
     navLinks.forEach(function (link) {
       link.style.color = "white";
       link.style.fontWeight = "300";
+      highlighted.style.fontWeight = "bold";
     });
   } else {
     navigationBar.style.bottom = "0";
@@ -27,6 +31,7 @@ function updateNavigationBarPosition() {
     navLinks.forEach(function (link) {
       link.style.color = "white";
       link.style.fontWeight = "400";
+      highlighted.style.fontWeight = "bold";
     });
   }
 }
@@ -34,25 +39,67 @@ function updateNavigationBarPosition() {
 // Listen for scroll events and update the position accordingly
 window.addEventListener("scroll", updateNavigationBarPosition);
 
-/* MY PROJECTS text appearing one letter at a time
+//********FOOTER ***********
 
-const myText = "MY PROJECTS";
-const myArray = myText.split("");
-let loopTimer;
+// Define the footer HTML content
+const footerHtml = `
+      <div class="footer descriptionSection">
+      <div class="footerMain">
+        <div>
+          <h2>FURTHER LINKS</h2>
+          <ul class="footerLinks">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/claire-bisgaard-67967a120/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <br />
+            <li>
+              <a
+                href="https://github.com/Clairebis"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Github</a
+              >
+            </li>
+            <br />
+            <li>
+              <a href="/assets/CV.docx" download="CV.docx"
+                >Download a copy of my CV</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>CONTACT</h2>
+          <ul>
+            <li>claire.bisgaard@gmail.com</li>
+            <br />
+            <li>+45 42435843</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="copyright">&copy; 2023 Claire Bisgaard</p>
+      </div>
+    </div>
+`;
 
-function frameLooper() {
-  if (myArray.length > 0) {
-    document.getElementById("myProjects").innerHTML += myArray.shift();
-  } else {
-    clearTimeout(loopTimer);
-    return false;
-  }
-  loopTimer = setTimeout("frameLooper()", 200);
+// Function to inject the footer HTML to an element by its ID
+function injectFooter(footerContainer) {
+  const elements = document.querySelectorAll(`.${footerContainer}`);
+  elements.forEach((element) => {
+    element.innerHTML = footerHtml;
+  });
 }
 
-frameLooper();*/
+// Call function
+injectFooter("footerContainer");
 
-// function for all textAnimation
+/* function for all textAnimation
 
 function textAnimation(targetElementId, text, animationSpeed = 200) {
   const targetElement = document.getElementById(targetElementId);
@@ -71,7 +118,7 @@ function textAnimation(targetElementId, text, animationSpeed = 200) {
   animateText();
 }
 
-textAnimation("myProjects", "MY PROJECTS");
+textAnimation("myProjects", "MY PROJECTS");*/
 
 // *******NAVIGATION BAR - HIGHLIGHT ACTIVE PAGE *************
 
