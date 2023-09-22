@@ -88,7 +88,7 @@ const footerHtml = `
     </div>
 `;
 
-// Function to inject the footer HTML to an element by its ID
+// Function to inject the footer HTML to elements based on class
 function injectFooter(footerContainer) {
   const elements = document.querySelectorAll(`.${footerContainer}`);
   elements.forEach((element) => {

@@ -304,6 +304,15 @@ p.reachOut a {
   margin-bottom: 50px;
 }
 
+.cards2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: var(--heroFont);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
 .card {
   background-color: var(--white);
   width: 300px;
@@ -323,7 +332,43 @@ p.reachOut a {
   align-items: flex-start;
 }
 
+.cardImageContainerHidden {
+  background-color: var(--white);
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .cardImageContainerSmuk {
+  background-color: var(--white);
+  height: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.cardImageContainerAGF {
+  background-color: var(--white);
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cardImageContainerGrundfos {
+  background-color: var(--white);
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cardImageContainerTrack {
   background-color: var(--white);
   height: auto;
 
