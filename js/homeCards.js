@@ -126,7 +126,8 @@ const smukfestBottom = new CardBottomSection(
   "2nd Semester UX/UI Project",
   "Task: Improve the festival experience for the attendees, by providing them with a digital way to enhance their festival experience.",
   "User Research, Client Research, Figma, WP",
-  "4 weeks, group project"
+  "4 weeks, group project",
+  "smukfest.html"
 );
 
 const AGFBottom = new CardBottomSection(
@@ -134,7 +135,8 @@ const AGFBottom = new CardBottomSection(
   "2nd Semester Exam Project",
   "Task: Develop a concept and an interactive digital solution for a company or another external partner.",
   "User and Client Research, Testing, Figma, WP",
-  "6 weeks, group project"
+  "6 weeks, group project",
+  "basketball.html"
 );
 
 const grundfosBottom = new CardBottomSection(
@@ -142,7 +144,8 @@ const grundfosBottom = new CardBottomSection(
   "1st Semester UX/UI & Coding",
   "Task: Devise and design a user-friendly, relevant and bold solution for a smart screen in the atrium.",
   "User Research, Testing, XD, HTML, CSS, JS",
-  "8 weeks, group project"
+  "8 weeks, group project",
+  "grundfos.html"
 );
 
 const blogBottom = new CardBottomSection(
@@ -150,7 +153,8 @@ const blogBottom = new CardBottomSection(
   "2nd Semester, 24 hour JS Exam",
   "Task: create a WordPress blog with modifications that will enhance the visual appeal and interactivity of your website.",
   "Wordpress, JavaScript",
-  "24 hours, individual project"
+  "24 hours, individual project",
+  "blog.html"
 );
 
 const trackBottom = new CardBottomSection(
@@ -158,7 +162,8 @@ const trackBottom = new CardBottomSection(
   "Summer School",
   "Task: Implement an application prototype using React Native.",
   "React Native",
-  "2 weeks, group project"
+  "2 weeks, group project",
+  "tracktap.html"
 );
 
 // instances of Card

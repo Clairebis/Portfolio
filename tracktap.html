@@ -158,7 +158,7 @@
           <p class="projectCardDescription"></p>
         </div>
       </div>
-      <div class="processRight2">
+      <div class="processRight3">
         <div class="processsImages">
           <img class="processImg6" src="/assets/issues.png" />
         </div>
@@ -177,57 +177,49 @@
         <div>
           <h2 class="projectCardSub">1. Minimum Viable Product (MVP)</h2>
           <p class="projectCardDescription">
-            I added JavaScript to the close button in the mobile navigation menu
-            to let the user return to the page they'd previously been on when
-            tapping it.
+            I focused on creating a simple track list with a request button,
+            search function and modal confirmation pop up for our prototype.
           </p>
           <p class="projectCardDescription">
-            This was a small thing, but I liked how much it improved the user
-            experience when they were able to tap the 'x' symbol and return to
-            where they'd previously been.
+            Other group members with more experience worked on integrating the
+            Spotify API, having a working QR scanner and working with Firebase
+            to log the sessions created by the DJs.
           </p>
 
-          <h2 class="projectCardSub">2. Stylesheets</h2>
+          <h2 class="projectCardSub">2. Styling</h2>
           <p class="projectCardDescription">
-            It was interesting figuring out how to make the images have the
-            diamond shape I'd planned for in my design.
-          </p>
-          <p class="projectCardDescription">
-            I set up the HTML with the images in containers. The images and
-            containers had separate classes assigned to them. I could then use
-            CSS to rotate the container in one direction and the image in the
-            other direction to give the effect I wanted.
+            We worked both with creating stylesheets for the different screens
+            through creating variables in e.g. our HomeScreen.js file, and with
+            creating a global stylesheet for the entire app which we could then
+            export and import into the various page files.
           </p>
 
-          <h2 class="projectCardSub">3. Colours</h2>
+          <h2 class="projectCardSub">3. Weather</h2>
           <p class="projectCardDescription">
-            I used Mapbox to show the locations of the hidden places on the
-            website. This involved designing an overview map on the homepage and
-            individual location-specific maps on each subpage. The primary goal
-            was to enhance user experience by providing all necessary location
-            information within the website, eliminating the need for users to
-            visit external sites to find addresses.
+            I also used the OpenWeather API to add a weather widget to the home
+            screen. We wanted users in a club to be able to see what the weather
+            was like outside before leaving the party.
           </p>
-
           <p class="projectCardDescription">
-            I added the Mapbox libraries to my JS and initialised the map using
-            my own API key. I also customised it by adding popups with the
-            location names.
+            I added the API key to my JS and used the useEffect hook and fetch
+            method to get the data from the API. I then used the data to display
+            the temperature and weather description, based on the user's
+            location.
           </p>
-
-          <a href="https://claireb.dk/"
-            ><p class="projectCardDescription external">
-              Link to project on external site.
-            </p></a
-          >
         </div>
       </div>
       <div class="codeRight">
         <div class="codeImages">
-          <img class="processImg4" src="/assets/mobNav.png" />
-          <img class="processImg4" src="/assets/diamond.png" />
+          <div class="trackCode1">
+            <img class="processImg4" src="/assets/colours.png" />
+            <img class="processImg4" src="/assets/styles.png" />
+          </div>
+          <img class="processImg4" src="/assets/Modal.png" />
         </div>
-        <img class="processImg5" src="/assets/map.png" />
+        <div class="trackCode2">
+          <img class="processImg4" src="/assets/TrackTap2.png" />
+          <img class="processImg5" src="/assets/weather.png" />
+        </div>
       </div>
     </div>
 
