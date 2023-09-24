@@ -142,7 +142,7 @@ const AGFBottom = new CardBottomSection(
 const grundfosBottom = new CardBottomSection(
   "Grundfos Kollegiet",
   "1st Semester UX/UI & Coding",
-  "Task: Devise and design a user-friendly, relevant and bold solution for a smart screen in the atrium.",
+  "Task: Devise and design a user-friendly, relevant and bold solution for a smart screen in the entrance.",
   "User Research, Testing, XD, HTML, CSS, JS",
   "8 weeks, group project",
   "grundfos.html"
