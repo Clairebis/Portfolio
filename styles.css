@@ -1130,6 +1130,25 @@ ul.subNavList li a:hover {
   margin-top: 5vh;
 }
 
+.processImg13 {
+  width: 400px;
+  margin-left: 7.5vw;
+  margin-bottom: 1vh;
+}
+
+.processImg14 {
+  width: 500px;
+  margin-top: 1vh;
+  margin-left: 5vw;
+  margin-bottom: 1vh;
+}
+
+.processImg15 {
+  width: 650px;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+}
+
 .processsImages {
   display: flex;
   flex-direction: column;
@@ -1163,6 +1182,15 @@ ul.subNavList li a:hover {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  justify-items: center;
+
+  margin: auto;
+}
+
+.codeImages3 {
+  display: flex;
+  flex-direction: column;
+
   justify-items: center;
 
   margin: auto;
