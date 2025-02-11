@@ -42,7 +42,7 @@ const footerHtml = `
         </div>
       </div>
       <div>
-        <p class="copyright">&copy; 2023 Claire Bisgaard</p>
+        <p class="copyright">&copy; 2025 Claire Bisgaard</p>
       </div>
     </div>
 `;

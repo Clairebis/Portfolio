@@ -81,8 +81,8 @@ body {
   margin: 0;
   padding: 0;
   background-attachment: fixed;
-  padding-bottom: -20px;
-  margin-bottom: -20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .heroTitle {
@@ -96,8 +96,8 @@ body {
 
 .heroDescription {
   font-family: var(--heroFont);
-  font-size: 18px;
-  width: 200px;
+  font-size: 28px;
+  font-weight: 300;
 }
 
 #navigation {
@@ -365,6 +365,15 @@ p.reachOut a {
   align-items: flex-start;
 }
 
+.cardImageContainerRestaurant {
+  background-color: var(--white);
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .cardImageContainerHidden {
   background-color: var(--white);
   height: auto;
@@ -386,7 +395,6 @@ p.reachOut a {
 .cardImageContainerAGF {
   background-color: var(--white);
   height: auto;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -443,6 +451,18 @@ p.reachOut a {
 
 .cardImageMob24 {
   height: 130px;
+  width: auto;
+  margin-left: 0;
+}
+
+.cardImageRestaurant {
+  height: 210px;
+  width: auto;
+  margin-left: 0;
+}
+
+.cardImageRestaurantSelected {
+  height: 400px;
   width: auto;
   margin-left: 0;
 }
@@ -681,6 +701,11 @@ ul.subNavList li a:hover {
   margin-bottom: 5vh;
 }
 
+.subDescription1 {
+  font-family: var(--heroFont);
+  margin-bottom: 3vh;
+}
+
 /* About */
 
 .aboutDescription {
@@ -726,6 +751,7 @@ ul.subNavList li a:hover {
 
 .team {
   margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 .bring {
@@ -733,8 +759,8 @@ ul.subNavList li a:hover {
 
   justify-content: center;
   gap: 40px;
-  margin-bottom: 4vh;
-  margin-top: 1vh;
+  margin-bottom: 7vh;
+  margin-top: 2vh;
   color: var(--black);
 }
 
@@ -1044,6 +1070,7 @@ ul.subNavList li a:hover {
   margin: auto;
   margin-bottom: 10vh;
   width: 50%;
+  align-items: center;
 }
 
 .processRight {
@@ -1534,6 +1561,11 @@ ul.subNavList li a:hover {
   }
 
   .processImg10 {
+    width: 300px;
+    margin: auto;
+  }
+
+  .processImg11 {
     width: 300px;
     margin: auto;
   }

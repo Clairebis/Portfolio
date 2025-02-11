@@ -114,7 +114,7 @@ class Card {
 
 const hiddenPlacesBottom = new CardBottomSection(
   "Hidden Places",
-  "1st Semester Exam Project",
+  "1st Semester Exam Project, December 2022",
   "Task: Create a responsive experience site for hidden places in or around a city of your choice.",
   "User Research, Testing, XD, HTML, CSS, JS",
   "3 weeks, individual project",
@@ -123,7 +123,7 @@ const hiddenPlacesBottom = new CardBottomSection(
 
 const smukfestBottom = new CardBottomSection(
   "Smukfest & IBM",
-  "2nd Semester UX/UI Project",
+  "2nd Semester UX/UI Project, March 2023",
   "Task: Improve the festival experience for the attendees, by providing them with a digital way to enhance their festival experience.",
   "User Research, Client Research, Figma, WP",
   "4 weeks, group project",
@@ -132,7 +132,7 @@ const smukfestBottom = new CardBottomSection(
 
 const AGFBottom = new CardBottomSection(
   "AGF Basktetball",
-  "2nd Semester Exam Project",
+  "2nd Semester Exam Project, May 2023",
   "Task: Develop a concept and an interactive digital solution for a company or another external partner.",
   "User and Client Research, Testing, Figma, WP",
   "6 weeks, group project",

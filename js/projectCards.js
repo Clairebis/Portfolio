@@ -112,9 +112,18 @@ class Card {
 
 // instances of Card bottom section
 
+const restaurantBottom = new CardBottomSection(
+  "BiteBuddy",
+  "1st Semester Design Sprint, September 2024",
+  "Task: Improve the festival experience for the attendees, by providing them with a digital way to enhance their festival experience.",
+  "User Research, Client Research, Figma, WP",
+  "5-day Design Sprint, group project",
+  "restaurant.html"
+);
+
 const hiddenPlacesBottom = new CardBottomSection(
   "Hidden Places",
-  "1st Semester Exam Project",
+  "1st Semester Exam Project, December 2022",
   "Task: Create a responsive experience site for hidden places in or around a city of your choice.",
   "User Research, Testing, XD, HTML, CSS, JS",
   "3 weeks, individual project",
@@ -123,7 +132,7 @@ const hiddenPlacesBottom = new CardBottomSection(
 
 const smukfestBottom = new CardBottomSection(
   "Smukfest & IBM",
-  "2nd Semester UX/UI Project",
+  "2nd Semester UX/UI Project, March 2023",
   "Task: Improve the festival experience for the attendees, by providing them with a digital way to enhance their festival experience.",
   "User Research, Client Research, Figma, WP",
   "4 weeks, group project",
@@ -132,7 +141,7 @@ const smukfestBottom = new CardBottomSection(
 
 const AGFBottom = new CardBottomSection(
   "AGF Basktetball",
-  "2nd Semester Exam Project",
+  "2nd Semester Exam Project, May 2023",
   "Task: Develop a concept and an interactive digital solution for a company or another external partner.",
   "User and Client Research, Testing, Figma, WP",
   "6 weeks, group project",
@@ -141,7 +150,7 @@ const AGFBottom = new CardBottomSection(
 
 const grundfosBottom = new CardBottomSection(
   "Grundfos Kollegiet",
-  "1st Semester UX/UI & Coding",
+  "1st Semester UX/UI & Coding, November 2022",
   "Task: Devise and design a user-friendly, relevant and bold solution for a smart screen in the entrance.",
   "User Research, Testing, XD, HTML, CSS, JS",
   "8 weeks, group project",
@@ -150,7 +159,7 @@ const grundfosBottom = new CardBottomSection(
 
 const blogBottom = new CardBottomSection(
   "Out in Nature",
-  "2nd Semester, 24 hour JS Exam",
+  "2nd Semester, 24 hour JS Exam, June 2023",
   "Task: create a WordPress blog with modifications that will enhance the visual appeal and interactivity of your website.",
   "Wordpress, JavaScript",
   "24 hours, individual project",
@@ -159,7 +168,7 @@ const blogBottom = new CardBottomSection(
 
 const trackBottom = new CardBottomSection(
   "TrackTap",
-  "Summer School",
+  "Summer School, July 2023",
   "Task: Implement an application prototype using React Native.",
   "React Native",
   "2 weeks, group project",
@@ -167,7 +176,9 @@ const trackBottom = new CardBottomSection(
 );
 
 // instances of Card
-
+const restaurantImageContainer = document.querySelector(
+  ".cardImageContainerRestaurant"
+);
 const hiddenPlacesImageContainer = document.querySelector(
   ".cardImageContainerHidden"
 );
@@ -183,6 +194,11 @@ const grundfosImageContainer = document.querySelector(
 const blogImageContainer = document.querySelector(".cardImageContainer24");
 
 const trackImageContainer = document.querySelector(".cardImageContainerTrack");
+
+const restaurantCard = new Card(
+  restaurantImageContainer,
+  restaurantBottom.render()
+);
 
 const hiddenPlacesCard = new Card(
   hiddenPlacesImageContainer,
@@ -203,6 +219,7 @@ const trackCard = new Card(trackImageContainer, trackBottom.render());
 const cardsContainerProject = document.querySelector(".cards2");
 
 //append cards to parent container (project)
+cardsContainerProject.appendChild(restaurantCard.render());
 cardsContainerProject.appendChild(hiddenPlacesCard.render());
 cardsContainerProject.appendChild(grundfosCard.render());
 cardsContainerProject.appendChild(smukfestCard.render());
